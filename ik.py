@@ -24,7 +24,6 @@ def solve_sss_trig(s0:float, s1:float, s2:float):
 
   return a, b, c
 
-# Обратная кинематика в 2D
 def solve_2_ik(l0:float, l1:float, x:float, y:float):
   """
   Функция для решения задач обратной кинематики для
@@ -50,6 +49,3 @@ def solve_2_ik(l0:float, l1:float, x:float, y:float):
       return False, "Failed to solve IK! (l2 > l0 + l1)"
   except Exception as e:
     return False, e
-
-def get_point_on_circle(angle:float):
-  return math.cos(math.radians(angle)), math.sin(math.radians(angle))
