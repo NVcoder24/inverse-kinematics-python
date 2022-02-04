@@ -41,8 +41,8 @@ def solve_2_ik(l0:float, l1:float, x:float, y:float):
       atan = math.degrees(math.atan2(y, x))
 
       # Приводим углы к нужному результату
-      A = 180 - (a + atan) # Угол A
-      B = 180 - b  	       # Угол B
+      A = 180 - (a + atan)
+      B = 180 - b
 
       return True, [A, B]
     else:
